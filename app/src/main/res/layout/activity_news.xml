@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jonathan.penumbraradio.News"
+    android:background="@drawable/newsbackground"
+    app:umanoPanelHeight="140dp"
+    app:umanoShadowHeight="10dp"
+    app:umanoOverlay= "true"
+    app:umanoFadeColor="#C9ffffff"
+    android:gravity = "bottom">
+
+    <!-- Main View -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/newsbackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/newsFrame2"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/newsFrame2"
+            android:layout_marginTop="13dp"
+            android:background="@null"
+            android:text=""
+            />
+
+        <TextView
+            android:id="@+id/newsFrame2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="TextView"
+            android:background="@drawable/newsframef"
+            android:maxLines = "100"
+            android:scrollbars = "vertical"/>
+
+
+    </RelativeLayout>
+
+    <!-- Slide View INSERT FRAGMENT HERE-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="240dp"
+        android:id =  "@+id/slideLayoutNews">
+
+    </RelativeLayout>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

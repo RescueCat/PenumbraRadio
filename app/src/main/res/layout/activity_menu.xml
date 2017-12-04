@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menuf"
+    tools:context="com.example.jonathan.penumbraradio.Menu"
+    app:umanoPanelHeight="140dp"
+    app:umanoShadowHeight="10dp"
+    app:umanoOverlay= "true"
+    app:umanoFadeColor="#C9ffffff"
+    android:gravity = "bottom">
+
+    <!-- Main View -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/newsButton"
+            android:background="@null"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="83dp"
+            />
+
+        <Button
+            android:id="@+id/profButton"
+            android:background="@null"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/newsButton"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="33dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            />
+
+        <Button
+            android:id="@+id/musicButton"
+            android:background="@null"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/newsButton"
+            android:layout_alignStart="@+id/newsButton"
+            android:layout_below="@+id/newsButton"
+            android:layout_marginLeft="57dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="134dp"
+            />
+
+        <Button
+            android:id="@+id/alarmButton"
+            android:background="@null"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/profButton"
+            android:layout_alignRight="@+id/profButton"
+            android:layout_below="@+id/musicButton"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="85dp"
+           />
+
+        <Button
+
+            android:id="@+id/logoutButton"
+            android:background="@null"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/alarmButton"
+            android:layout_alignEnd="@+id/profButton"
+            android:layout_alignRight="@+id/profButton"
+            android:layout_marginBottom="64dp"
+            />
+    </RelativeLayout>
+
+    <!-- Slide View INSERT FRAGMENT HERE-->
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginBottom="240dp"
+    android:id =  "@+id/slideLayoutMenu">
+    </RelativeLayout>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jonathan.penumbraradio.Profiles"
+    android:background="@drawable/profilef"
+    app:umanoPanelHeight="140dp"
+    app:umanoShadowHeight="10dp"
+    app:umanoOverlay= "true"
+    app:umanoFadeColor="#C9ffffff"
+    android:gravity = "bottom">
+
+    <!-- Main View -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </RelativeLayout>
+
+    <!-- Slide View INSERT FRAGMENT HERE-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="240dp"
+        android:id =  "@+id/slideLayoutProf">
+    </RelativeLayout>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>
